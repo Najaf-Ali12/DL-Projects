@@ -1,6 +1,6 @@
-tensorflow
+tensorflow-cpu
 scikit-learn
 streamlit
-numpy 
+numpy
 pandas
 matplotlib
