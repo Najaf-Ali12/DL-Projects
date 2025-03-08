@@ -1,12 +1,9 @@
 import streamlit as st
-import pickle
 import numpy as np
 from PIL import Image
-
+from tensorflow.keras.models import load_model
 # Load your trained model (update the path to your model if needed)
-model = pickle.load(open('Stroke_prediction_model.pkl', 'rb'))
-
-st.snow()
+model = load_model("stroke_prediction_model.h5")
 
 # Page Title
 st.title("🩺 Stroke Prediction App")
