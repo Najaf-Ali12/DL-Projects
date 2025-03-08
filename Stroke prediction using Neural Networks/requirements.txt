@@ -1,7 +1,0 @@
-tensorflow-cpu
-python-3.10
-scikit-learn
-streamlit
-numpy
-pandas
-matplotlib
