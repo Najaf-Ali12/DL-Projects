@@ -1,12 +1,14 @@
 import streamlit as st
 from tensorflow.keras.models import load_model
 import numpy as np
+import pickle
 import joblib
 from PIL import Image
 
 # Load the scaler and model with error handling
 try:
-    scaler = joblib.load("scaler.pkl")
+    with open("scaler.pkl", "rb") as f:
+    scaler = pickle.load(f)
     model = load_model("Zakat eligibility predictor.keras", compile=False)
 except Exception as e:
     st.error(f"Error loading model or scaler: {e}")
