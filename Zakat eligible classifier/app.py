@@ -4,8 +4,12 @@ import numpy as np
 import pickle
 import joblib
 from PIL import Image
-import os
-st.write("Files in the current directory:", os.listdir())  
+import os 
+# Change directory to "Zakat eligible classifier"
+os.chdir("Zakat eligible classifier")
+
+st.write("Current working directory:", os.getcwd())  # Display current directory
+st.write("Files in the current directory:", os.listdir())  # Display files
 
 # Load the scaler and model with error handling
 try:
