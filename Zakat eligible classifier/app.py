@@ -4,6 +4,8 @@ import numpy as np
 import pickle
 import joblib
 from PIL import Image
+import os
+st.write("Files in the current directory:", os.listdir())  
 
 # Load the scaler and model with error handling
 try:
