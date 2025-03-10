@@ -5,6 +5,10 @@ from tensorflow.keras.models import load_model
 # Load your trained model (update the path to your model if needed)
 model = load_model("models/Stroke_prediction_model.h5")
 
+import os
+print("Current Working Directory:", os.getcwd())
+
+
 # Page Title
 st.title("🩺 Stroke Prediction App")
 
