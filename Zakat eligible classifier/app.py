@@ -5,6 +5,7 @@ import pickle
 import joblib
 from PIL import Image
 import os 
+
 # Change directory to "Zakat eligible classifier"
 os.chdir("Zakat eligible classifier")
 
