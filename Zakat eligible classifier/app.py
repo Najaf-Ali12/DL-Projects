@@ -6,11 +6,9 @@ import joblib
 from PIL import Image
 import os 
 
-# Change directory to "Zakat eligible classifier"
-os.chdir("Zakat eligible classifier")
-
-st.write("Current working directory:", os.getcwd())  # Display current directory
-st.write("Files in the current directory:", os.listdir())  # Display files
+# Print current working directory
+st.write("Before changing directory, current path:", os.getcwd())
+st.write("Available files & folders:", os.listdir())
 
 # Load the scaler and model with error handling
 try:
