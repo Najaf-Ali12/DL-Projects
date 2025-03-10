@@ -7,8 +7,8 @@ from PIL import Image
 import os 
 
 # Print current working directory
-st.write("Before changing directory, current path:", os.getcwd())
-st.write("Available files & folders:", os.listdir())
+#st.write("Before changing directory, current path:", os.getcwd())
+#st.write("Available files & folders:", os.listdir())
 
 # Load the scaler and model with error handling
 try:
