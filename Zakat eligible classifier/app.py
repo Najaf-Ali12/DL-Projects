@@ -19,12 +19,18 @@ except Exception as e:
     st.error(f"Error loading model or scaler: {e}")
     st.stop()
 
+try:
+    with open("scaler.pkl", "rb") as f:
+        scaler = pickle.load(f)
+
     # Debugging step: Check if scaler is correctly loaded
-import sklearn
-st.write(f"Scaler loaded successfully! Type: {type(scaler)} (Sklearn version: {sklearn.__version__})")
-model = load_model("Zakat eligibility predictor.keras", compile=False)
+    import sklearn
+    st.write(f"Scaler loaded successfully! Type: {type(scaler)} (Sklearn version: {sklearn.__version__})")
 
-
+    model = load_model("Zakat eligibility predictor.keras", compile=False)
+except Exception as e:
+    st.error(f"Error loading model or scaler: {e}")
+    st.stop()
 
 # Page title
 st.title("📢 Zakat Eligibility Detector 📢")
