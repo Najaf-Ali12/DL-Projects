@@ -7,7 +7,7 @@ from tensorflow.keras.models import load_model
 import os
 print("Current Working Directory:", os.getcwd())
 
-model = load_model("models/Stroke_prediction_model.h5")
+model = load_model("models\Stroke_prediction_model.h5")
 
 
 
