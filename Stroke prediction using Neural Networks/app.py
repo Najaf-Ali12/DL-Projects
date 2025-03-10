@@ -5,6 +5,17 @@ import pickle
 from tensorflow.keras.models import load_model
 import joblib
 
+import os
+
+# Get the current working directory
+print("Current Working Directory:", os.getcwd())
+
+# List all files and folders in the current directory
+files = os.listdir(os.getcwd())
+
+print("Files and Folders in Current Directory:", files)
+
+
 # Load your trained model (update the path to your model if needed)
 model = load_model("stroke_prediction_model.keras")
 
