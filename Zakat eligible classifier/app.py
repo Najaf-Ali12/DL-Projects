@@ -79,7 +79,7 @@ if st.button("Check Eligibility"):
 
 # ⭐ User Review Section
 st.subheader("⭐ Rate this Project")
-st.feedback("Stars")
+st.feedback("stars")
 st.write("Thanks a lot for your feedback! ⭐" )
 
 # 💬 User commnent section
