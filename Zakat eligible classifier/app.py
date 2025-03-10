@@ -8,7 +8,7 @@ from PIL import Image
 # Load the scaler and model with error handling
 try:
     with open("scaler.pkl", "rb") as f:
-    scaler = pickle.load(f)
+        scaler = pickle.load(f)
     model = load_model("Zakat eligibility predictor.keras", compile=False)
 except Exception as e:
     st.error(f"Error loading model or scaler: {e}")
