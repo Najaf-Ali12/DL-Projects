@@ -6,9 +6,8 @@ import joblib
 from PIL import Image
 import os 
 
-# Print current working directory
-#st.write("Before changing directory, current path:", os.getcwd())
-#st.write("Available files & folders:", os.listdir())
+# Showing the developer name
+st.sidebar.markdown("Developed by: Najaf Ali")
 
 # Load the scaler and model with error handling
 try:
@@ -77,3 +76,14 @@ if st.button("Check Eligibility"):
 
     except Exception as e:
         st.error(f"An error occurred while processing: {e}")
+
+# ⭐ User Review Section
+st.subheader("⭐ Rate this Project")
+st.feedback("Stars")
+st.write("Thanks a lot for your feedback! ⭐" )
+
+# 💬 User commnent section
+st.subheader("💬 Share your thoughts") 
+comment=st.text_area("Leave a comment below") 
+if st.button("Submit feedback"):
+    st.success("Thank you for your valuable feedback! 😊") 
