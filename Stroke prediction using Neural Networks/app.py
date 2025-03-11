@@ -7,15 +7,8 @@ import joblib
 
 import os
 
-# Define the path to the new working directory
-new_directory = os.path.join(os.getcwd(), "Stroke prediction using Neural Networks")
-
-# Change the working directory
-os.chdir(new_directory)
-
-# Verify the change
-print("New Working Directory:", os.getcwd())
-
+print("Current Directory:", os.getcwd())  # Check where you are
+print("Folders in Current Directory:", os.listdir())  # List available folders
 
 # Load your trained model (update the path to your model if needed)
 model = load_model("stroke_prediction_model.keras")
