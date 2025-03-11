@@ -7,13 +7,18 @@ import joblib
 
 import os
 
-# List all files and folders in the current directory
-files = os.listdir(os.getcwd())
+# Define the path to the new working directory
+new_directory = os.path.join(os.getcwd(), "Stroke prediction using Neural Networks")
 
-print("Files and Folders in Current Directory:", files)
+# Change the working directory
+os.chdir(new_directory)
+
+# Verify the change
+print("New Working Directory:", os.getcwd())
+
 
 # Load your trained model (update the path to your model if needed)
-model = load_model("models/Stroke_prediction_model.h5")
+model = load_model("stroke_prediction_model.keras")
 
 # Load the trained scaler
 with open("scaler.pkl", "rb") as f:
