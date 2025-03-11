@@ -13,7 +13,7 @@ files = os.listdir(os.getcwd())
 print("Files and Folders in Current Directory:", files)
 
 # Load your trained model (update the path to your model if needed)
-model = load_model("models\stroke_prediction_model.h5")
+model = load_model("models/stroke_prediction_model.h5")
 
 # Load the trained scaler
 with open("scaler.pkl", "rb") as f:
