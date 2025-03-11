@@ -11,7 +11,7 @@ print("Current Directory:", os.getcwd())  # Check where you are
 print("Folders in Current Directory:", os.listdir())  # List available folders
 
 # Load your trained model (update the path to your model if needed)
-model = load_model("stroke_prediction_model.keras")
+model = load_model("Stroke_prediction_model.keras")
 
 # Load the trained scaler
 with open("scaler.pkl", "rb") as f:
