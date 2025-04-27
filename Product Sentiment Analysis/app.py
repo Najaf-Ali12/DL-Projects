@@ -24,7 +24,7 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Apply CSS
-local_css('style.css')
+local_css('/mount/src/dl-projects/Product Sentiment Analysis/style.css')
 
 # App Title
 st.title("Sentiment Analysis App")
