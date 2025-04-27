@@ -7,7 +7,7 @@ from tensorflow.keras.models import load_model
 import os
 
 # Load the model
-model = load_model('/mount/src/dl-projects/sentiment_model.keras')
+model = load_model('/mount/src/dl-projects/Product Sentiment Analysis/sentiment_model.keras')
 
 # Vocabulary size and max sentence length should match the training settings
 voc_size = 5000
