@@ -5,9 +5,16 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.keras.models import load_model
 import os
-current_directory = os.getcwd()
-st.write(f"Current working directory: {current_directory}")
+model_path = 'sentiment_model.keras'  # Adjust based on your file location
 
+# Print the absolute path to check where Streamlit is looking
+st.write(f"Full model path: {os.path.abspath(model_path)}")
+
+if os.path.exists(model_path):
+    model = load_model(model_path)
+    st.write("Model loaded successfully!")
+else:
+    st.write(f"Model not found at {model_path}")
 # Load the model
 model = load_model('sentiment_model.keras')
 
