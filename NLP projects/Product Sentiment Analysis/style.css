@@ -1,0 +1,28 @@
+body {
+    background-color: #f0f2f6;
+}
+
+h1, h2 {
+    color: #ff4b4b;
+    text-align: center;
+}
+
+textarea {
+    background-color: #ffffff;
+    border: 2px solid #ff4b4b;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.stButton button {
+    background-color: #ff4b4b;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.stButton button:hover {
+    background-color: #cc0000;
+}
